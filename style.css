@@ -106,7 +106,7 @@ position: absolute;
         max-width: 90%; /* Reduz a largura do vídeo para telas menores */
     }
 
-    h1, #semafaro, #mart {
+    h1,  #mart {
         position: absolute;
         left: 10%;
         font-size: 25px; /* Ajusta o tamanho da fonte para telas menores */
@@ -142,6 +142,14 @@ position: absolute;
         font-size: 25px; /* Ajusta o tamanho da fonte para telas menores */
         max-height: 50vh; /* Define a altura máxima como 50% da altura da viewport */
     
+    
+}   
+
+#semafaro {
+       position: absolute;
+        left: 5%;
+        font-size: 25px; /* Ajusta o tamanho da fonte para telas menores */
+        max-height: 50vh; /* Define a altura máxima como 50% da altura da viewport */
     
 }    
 }
