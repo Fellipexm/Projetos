@@ -5,7 +5,7 @@
 }
 
 html, body {
-    background-color: blue;
+    background-color: white;
     height: 100%;
     width: 100%;
 }
@@ -16,12 +16,14 @@ body {
     align-items: center;
     background-color: #f0f0f0;
     margin: 0;
+    padding: 20px; /* Adicionado padding para afastar conteúdo das bordas */
 }
 
 .video-container {
     width: 100%;
     max-width: 800px;
     padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicionado sombra para destacar o vídeo */
 }
 
 video {
@@ -29,82 +31,93 @@ video {
     height: auto;
 }
 
-
 #imagem {
     position: absolute;
-    left: 26px;
-    top: 30px;
+    left: 20px;
+    top: 20px;
     width: 50px;
     cursor: pointer;
+    z-index: 10; /* Garante que a imagem fique sobreposta a outros elementos */
+}
+
+
+#semafaro, #mart {
+    text-align: center;
+    width: 100%;
+    z-index: 10; /* Garante que os textos fiquem sobrepostos */
 }
 
 h1 {
-    text-align: center;
-   position: absolute;
-   left: 48%;
-   top: 30px;
+    position: absolute;
+    top: 10px;
+
+
 }
 
-#semafaro {
-    text-align: center;
-    position: absolute;
-    left: 45%;
-    top: 30px;
+#sema {
+position: absolute;
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Garante que o vídeo fique abaixo dos textos */
+
+
+
+
 }
 
 #unico {
     position: absolute;
-    width: 100%; /* Ajuste a largura conforme necessário */
-    height: auto; /* Mantém a proporção do vídeo */
-    max-width: 700px; /* Define a largura máxima */
-    max-height: 700px; /* Define a altura máxima */
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
     top: 10%;
-    left: 35%;
-  }
-  
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Garante que o vídeo fique abaixo dos textos */
+}
 
+@media (max-width: 1024px) {
+    h1, #semafaro, #mart {
+        font-size: 24px; /* Reduz o tamanho da fonte para telas menores */
+    }
+
+#unico {
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    max-height: 700px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Garante que o vídeo fique abaixo dos textos */
+}
+}
 
 @media (max-width: 768px) {
-   h1 {
-    text-align: center;
-    position: absolute;
-    left: 30%;
-    top: 30px;
+    body {
+        padding: 10px; /* Reduz o padding para telas menores */
+    }
 
-   }
+    .video-container {
+        max-width: 90%; /* Reduz a largura do vídeo para telas menores */
+    }
 
-   #semafaro {
-    text-align: center;
-    position: absolute;
-    left: 23%;
-    top: 30px;
-}
-#unico {
-    position: absolute;
-    width: 100%; /* Ajuste a largura conforme necessário */
-    height: auto; /* Mantém a proporção do vídeo */
-    max-width: 350px; /* Define a largura máxima */
-    max-height: 500px; /* Define a altura máxima */
-    top: 17%;
-    left: 5%;
-  }
+    h1, #semafaro, #mart {
+        font-size: 20px; /* Ajusta o tamanho da fonte para telas menores */
+    }
 
-  #mart {
-    text-align: center;
-    position: absolute;
-    left: 21%;
-    top: 30px;
-  }
+    #imagem {
+        width: 40px; /* Reduz o tamanho da imagem para telas menores */
+    }
 
-
-  
-#imagem {
-    position: absolute;
-    left: 26px;
-    top: 30px;
-    width: 40px;
-    cursor: pointer;
-}
-  
-
+    #unico {
+        max-width: 90%; /* Reduz a largura do vídeo para telas menores */
+        top: 20%; /* Ajusta a posição vertical do vídeo */
+        left: 50%; /* Mantém o vídeo centralizado */
+        transform: translateX(-50%);
+    }
 }
