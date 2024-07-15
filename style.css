@@ -35,7 +35,7 @@ video {
     position: absolute;
     left: 20px;
     top: 20px;
-    width: 50px;
+    width: 60px;
     cursor: pointer;
     z-index: 10; /* Garante que a imagem fique sobreposta a outros elementos */
 }
