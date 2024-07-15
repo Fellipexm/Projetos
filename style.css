@@ -133,7 +133,15 @@ position: absolute;
     left: 50%; /* Mantém o vídeo centralizado */
     transform: translateX(-50%);
          
-      
-  }
+}
+
+
+#House {
+        position: absolute;
+        left: 20%;
+        font-size: 25px; /* Ajusta o tamanho da fonte para telas menores */
+        max-height: 50vh; /* Define a altura máxima como 50% da altura da viewport */
     
+    
+}    
 }
