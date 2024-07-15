@@ -115,9 +115,12 @@ position: absolute;
     }
 
     #unico {
-        max-width: 90%; /* Reduz a largura do vídeo para telas menores */
-        top: 20%; /* Ajusta a posição vertical do vídeo */
-        left: 50%; /* Mantém o vídeo centralizado */
-        transform: translateX(-50%);
+     max-width: 80%; /* Reduz a largura do vídeo para telas menores */
+    max-height: 50vh; /* Define a altura máxima como 50% da altura da viewport */
+    top: 20%; /* Ajusta a posição vertical do vídeo */
+    left: 50%; /* Mantém o vídeo centralizado */
+    transform: translateX(-50%);
+}
+
     }
 }
