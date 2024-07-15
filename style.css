@@ -107,7 +107,7 @@ position: absolute;
     }
 
     h1, #semafaro, #mart {
-        font-size: 20px; /* Ajusta o tamanho da fonte para telas menores */
+        font-size: 30px; /* Ajusta o tamanho da fonte para telas menores */
         max-height: 50vh; /* Define a altura máxima como 50% da altura da viewport */
     }
 
@@ -116,7 +116,7 @@ position: absolute;
     }
 
     #unico {
-     max-width: 80%; /* Reduz a largura do vídeo para telas menores */
+    max-width: 80%; /* Reduz a largura do vídeo para telas menores */
     max-height: 50vh; /* Define a altura máxima como 50% da altura da viewport */
     top: 20%; /* Ajusta a posição vertical do vídeo */
     left: 50%; /* Mantém o vídeo centralizado */
@@ -124,9 +124,9 @@ position: absolute;
 }
  
   #sema {
-         position: absolute;
-         max-width: 80%; /* Reduz a largura do vídeo para telas menores */
-        max-height: 50vh; /* Define a altura máxima como 50% da altura da viewport */
+    position: absolute;
+    max-width: 80%; /* Reduz a largura do vídeo para telas menores */
+    max-height: 50vh; /* Define a altura máxima como 50% da altura da viewport */
     top: 20%; /* Ajusta a posição vertical do vídeo */
     left: 50%; /* Mantém o vídeo centralizado */
     transform: translateX(-50%);
