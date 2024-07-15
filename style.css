@@ -59,7 +59,7 @@ position: absolute;
     width: 100%;
     max-width: 500px;
     max-height: 500px;
-    top: 10%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1; /* Garante que o vídeo fique abaixo dos textos */
