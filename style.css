@@ -107,7 +107,7 @@ position: absolute;
     }
 
     h1, #semafaro, #mart {
-        font-size: 30px; /* Ajusta o tamanho da fonte para telas menores */
+        font-size: 25px; /* Ajusta o tamanho da fonte para telas menores */
         max-height: 50vh; /* Define a altura máxima como 50% da altura da viewport */
     }
 
