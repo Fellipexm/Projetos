@@ -68,7 +68,7 @@ h1 {
    h1 {
     text-align: center;
     position: absolute;
-    left: 38%;
+    left: 30%;
     top: 30px;
 
    }
@@ -85,14 +85,14 @@ h1 {
     height: auto; /* Mantém a proporção do vídeo */
     max-width: 350px; /* Define a largura máxima */
     max-height: 500px; /* Define a altura máxima */
-    top: 20%;
+    top: 17%;
     left: 5%;
   }
 
   #mart {
     text-align: center;
     position: absolute;
-    left: 27%;
+    left: 23%;
     top: 30px;
   }
   
