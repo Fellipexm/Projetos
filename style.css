@@ -146,7 +146,8 @@ position: absolute;
 }   
 
 #semafaro {
-       position: absolute;
+        position: absolute;
+         top:10%;
         left: 5%;
         font-size: 25px; /* Ajusta o tamanho da fonte para telas menores */
         max-height: 50vh; /* Define a altura máxima como 50% da altura da viewport */
